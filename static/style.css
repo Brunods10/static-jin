@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+img {
+    width: 100%;
+}
+
+html, body {
+    font-family: "Poppins", sans-serif;
+    min-width: 200px;
+    /*color: "#222";*/
+}
+
+.full-width {
+
+}
+
+.navbar .container {
+    padding: 0;
+}
+
+.anchor:before {
+    top: -75px;
+    height: 75px;
+    content: '';
+    display: block;
+}
+
+.title_inv {
+    display: none;
+}
+
+h1, h2, h3, h4 {
+    padding: 0;
+    margin: 0;
+}
+p {
+    font-size: 1.1rem;
+}
+
+.navbar {
+    z-index: 10;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+.navbar-brand img {
+    width: 10rem;
+    height: auto;
+    
+}
+.nav-dropdown {
+    z-index: -1;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: inline-block;
+    width: 100%;
+    position: absolute;
+    height: 0;
+    opacity: 0;
+    transition-delay: 0.1s;
+    transition: 0.25s ease-out;
+    left: 0;
+    right: 0;
+    text-align: center;
+    display: none;
+}
+.nav-dropdown li {
+    display: inline-block;
+    padding: 0 2.2rem 0 2.2rem;
+    
+}
+.nav-item:hover ul.nav-dropdown {
+    opacity: 1;
+    height: auto;
+    padding: 2rem 0 2rem 0;
+}
+
+.banner {     
+    /*background-image: url("img/astronomy-colors-dark-957040.jpg");
+    background-position: 85% 80%;*/
+    /*background-image: linear-gradient(140deg, #4388F3, blue);*/
+    background-image: url("img/adult-adventure-backlit.jpg");
+    background-position: 80% 50%;
+    background-size: cover;
+    height: 600px;
+}
+.banner-cards {
+    position: relative;
+    margin-top: -200px;
+}
+.banner-cards .card {
+    background-color: white;
+    border-color: white;
+    box-shadow: 0 0 30px rgba(0,0,0,.1);
+    padding: 1rem;
+    margin-bottom: 1rem;
+
+}
+.banner-cards .card-title{
+    width: 70%;
+    margin: 0 auto;
+    font-size: 1.4rem;
+
+}
+.banner-cards img {
+    width: 70%;
+    margin: 0 auto;
+    height: auto;
+    margin-top: auto;
+    padding-bottom: 2rem;
+}
+.banner-cards .btn {
+    width: 50%;
+    margin: auto;
+}
+.card.cup {
+    position: relative;
+    max-width: 95%;
+
+}
+.card.beat {
+    position: relative;
+    max-width: 95%;
+}
+.key-word {
+    color: #F48830;
+    font-weight: 600;
+}
+.banner-cards .btn {
+    white-space: normal;
+    background-color: #F48830;
+    border-color: #F48830;
+    max-width: 250px;
+    margin: auto;
+}
+.banner-cards .btn:hover {
+    color: #f5f5f5;
+    opacity: 0.9;
+}
+input[name="email"] {
+    color: #b5b5b5;
+}
+.banner button {
+    display: none;
+}
+
+.banner-clinical {
+    background-image: url("img/all2.jpg");
+    background-position: 90% 50%;
+    background-size: cover;
+    height: 600px;
+    color: white;
+}
+
+.connect {
+    background-color: white;
+}
+
+.connect .card:after {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    border-color: rgba(136, 183, 213, 0);
+    border-top-color: #88b7d5;
+    border-width: 15px;
+    margin-left: -30px;
+}
+.connect .card {
+    cursor: pointer;
+    background-color: transparent;
+    border-color: transparent;
+}
+.connect .card-body {
+    padding: 0;
+}
+.subscribe {
+    padding: 2% 0 2% 0;
+    margin: auto 0;
+}
+.subscribe input[type="submit"] {
+    padding: 0;
+}
+
+.services {
+    
+}
+.services h2 {
+    padding: 0rem 0 1rem 0rem;  
+}
+.how-it-works {
+    background-color: white;
+}
+
+.how-it-works .card {
+    cursor: pointer;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+.how-it-works .card-body {
+    text-align: center;
+}
+.how-it-works .card:before {
+    margin-left: auto;
+    content: "\2212";
+    padding:0.5rem 0 0 0;
+}
+.how-it-works .card.collapsed:before {
+    content: "\002b";
+    padding-right: 1rem;
+}
+.how-it-works  img {
+    margin: 0 auto;
+    max-width: 100px;
+    padding:0.5rem 0 0 0;
+}
+.how-it-works a {
+    z-index: 1;
+}
+
+.clinical-subtitle {
+    max-height: 10%;
+}
+
+footer {
+  background-color: white;
+  color: black;
+  padding-top: 2rem;
+}
+footer img {
+    width: 180px;
+}
+
+/*---Media Queries --*/
+@media (max-width: 992px) {    
+
+}
+@media (max-width: 768px) {
+    html {
+        font-size: 0.8rem;
+    }
+    .container {
+        width: 80%;
+    }
+    .btn {
+        font-size: 0.9rem;
+    }
+}
+@media (max-width: 576px) {
+    html {
+        font-size: 0.6rem;
+    }
+    .anchor:before {
+        top: -75px;
+        height: 75px;
+    }
+    
+}
+
+
+}
+

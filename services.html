@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+    {% block title %} Home {% endblock %}
+    {% block content %}
+        <!-- Banner -->
+        <div class="full-width banner">
+            <div class="container">
+                <!-- <img src="img/astronomy-colors-dark-957040.jpg" alt="banner-image"> -->
+                <div class="row">                
+                    <h1 class="col-12">Developing a Strategy</h1>    
+                    <h4>A Precision Medicine Approach</h4>       
+                </div>
+            </div>
+        </div>
+        <div class="container anchor" id="beat">
+            <div class="row">
+                <div class="col-6">
+                    <h2>
+                        BEATcancer&trade;
+                    </h2>
+                    <p>
+                        BEATcancer&trade; tests a patient's tumor biopsy with 30 combinations of 40 drugs at different doses to identify the set of drugs that gives the best response.
+                    </p>
+                    <a href="{{ url_for('static', filename='beat_report.pdf') }}" target="_blank">
+                        <button class="btn btn-primary action">View a Sample Report</button>
+                    </a>
+                </div>
+                <div class="col-6 mx-auto">
+                    <img class="float-right" src={{ url_for('static', filename='img/drugs.png') }} alt="BEATcancer">
+                </div>
+            </div>
+        </div>
+        <div class="container anchor" id="cup">
+            <div class="row">
+                <div class="col-6">
+                    <h2>
+                        CUPid
+                    </h2>
+                    <p>
+                        CUPid identifies the primary sites of cancers of unknown primary (CUP) and identifies targetable mutations.
+                    </p>
+                    <p>
+                        We sequence every gene and test them on an ensemble of models based on different sets of genes. This approach to machine learning gives us a clearer picture of the unknown cancer type.
+                    </p>
+                    <a href="{{ url_for('static', filename='cup_report.pdf') }}" target="_blank">
+                        <button class="btn btn-primary action">View a Sample Report</button>
+                    </a>
+                </div>
+                <div class="col-6 mx-auto">
+                    <img class="float-right" src={{ url_for('static', filename='img/seq.png') }} alt="BEATcancer">
+                </div>
+            </div>
+        </div>
+    {% endblock %}
