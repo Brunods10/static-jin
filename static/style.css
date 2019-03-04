@@ -1,13 +1,22 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Barlow:400,500,700');
 
 img {
     width: 100%;
 }
 
 html, body {
-    font-family: "Poppins", sans-serif;
+    font-family: "Barlow", sans-serif;
     min-width: 200px;
-    /*color: "#222";*/
+}
+
+.violet {
+    color: #442CA3;
+}
+.pink {
+    color: #DF2080;
+}
+.pink a {
+    text-decoration: underline;
 }
 
 .full-width {
@@ -44,7 +53,7 @@ p {
 }
 
 .navbar-brand img {
-    width: 10rem;
+    width: 14em;
     height: auto;
     
 }
@@ -74,15 +83,22 @@ p {
     opacity: 1;
     height: auto;
     padding: 2rem 0 2rem 0;
+    color: #75777a;
+}
+.nav-link {
+    font-weight: bold;
+    letter-spacing: 0.05em;
 }
 
 .banner {     
     /*background-image: url("img/astronomy-colors-dark-957040.jpg");
     background-position: 85% 80%;*/
-    /*background-image: linear-gradient(140deg, #4388F3, blue);*/
-    background-image: url("img/adult-adventure-backlit.jpg");
-    background-position: 80% 50%;
-    background-size: cover;
+    /*background-image: linear-gradient(150deg, #DF2080, #DF2080, #DF2080, #442CA3, #442CA3);*/
+    background-image: url("img/untitled-2.svg");
+    background-repeat:no-repeat;
+    background-size: 900px;
+    background-color: #FFE998;
+    background-position: 60% 0%;
     height: 600px;
 }
 .banner-cards {
@@ -95,24 +111,44 @@ p {
     box-shadow: 0 0 30px rgba(0,0,0,.1);
     padding: 1rem;
     margin-bottom: 1rem;
+}
+.banner-text {
+    padding: 0 0 0 0em;
+}
+.banner-text h1 {
+    font-size: 5em;
+    width: 80%;
+}
+.banner-text h2 {
+    width: 70%;
+}
+.banner-text .play-video {
+    border-radius: 50px;
+    margin: 1em 0 0 0;
+    padding: 0.7em 2em 0.7em 2em;
+    font-size: 1.2em;
+    letter-spacing: 0.1em;
+    background-color: #442CA3;
+    border-color: #442CA3;
+}
+.row-card {
+  display: flex;
+  background-color: white;
+  padding: 2em 0 0 2em;
+  box-shadow: -5px 5px 10px 5px rgba(0, 0, 0, 0.3);
 
 }
-.banner-cards .card-title{
-    width: 70%;
-    margin: 0 auto;
-    font-size: 1.4rem;
-
+.container.banner-cards {
+    padding: 0;
 }
-.banner-cards img {
-    width: 70%;
-    margin: 0 auto;
-    height: auto;
-    margin-top: auto;
-    padding-bottom: 2rem;
+.column-card {
+  flex: 50%;
+  justify-content: space-between;
 }
-.banner-cards .btn {
-    width: 50%;
-    margin: auto;
+.product-title {
+}
+.banner-cards card {
+    padding: 0;
 }
 .card.cup {
     position: relative;
@@ -123,8 +159,12 @@ p {
     position: relative;
     max-width: 95%;
 }
-.key-word {
-    color: #F48830;
+.key-word-beat {
+    color: #DF2080;
+    font-weight: 600;
+}
+.key-word-cupid {
+    color: #009DD8;
     font-weight: 600;
 }
 .banner-cards .btn {
@@ -178,6 +218,15 @@ input[name="email"] {
 .connect .card-body {
     padding: 0;
 }
+.why {
+    background-color: white;
+}
+.why h1 {
+    color: #442CA3;
+    letter-spacing: 0.05em;
+    padding: 0 0 0.5em 0;
+}
+
 .subscribe {
     padding: 2% 0 2% 0;
     margin: auto 0;
