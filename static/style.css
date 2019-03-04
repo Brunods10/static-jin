@@ -94,11 +94,11 @@ p {
     /*background-image: url("img/astronomy-colors-dark-957040.jpg");
     background-position: 85% 80%;*/
     /*background-image: linear-gradient(150deg, #DF2080, #DF2080, #DF2080, #442CA3, #442CA3);*/
-    background-image: url("img/untitled-2.svg");
+    background-image: url("img/old_man_skipping.png");
     background-repeat:no-repeat;
-    background-size: 900px;
+    background-size: 400px;
     background-color: #FFE998;
-    background-position: 60% 0%;
+    background-position: 90% 14%;
     height: 600px;
 }
 .banner-cards {
